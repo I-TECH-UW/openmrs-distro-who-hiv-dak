@@ -2,7 +2,8 @@ version: "3.7"
 
 services:
   gateway:
-    image: openmrs/openmrs-reference-application-3-gateway:${TAG:-qa}
+    image: openmrs/openmrs-reference-application-3-gateway:dev3
+    container_name: gateway
     restart: "unless-stopped"
     depends_on:
       - frontend
@@ -11,7 +12,8 @@ services:
       - "80:80"
 
   frontend:
-    image: openmrs/openmrs-reference-application-3-frontend:${TAG:-qa}
+    image: openmrs/openmrs-reference-application-3-frontend:dev3
+    container_name: frontend
     restart: "unless-stopped"
     environment:
       SPA_PATH: /openmrs/spa
@@ -25,7 +27,8 @@ services:
       - backend
 
   backend:
-    image: openmrs/openmrs-reference-application-3-backend:${TAG:-qa}
+    image: itechuw/openmrs-distro-who-hiv-dak:main
+    container_name: backend
     restart: "unless-stopped"
     depends_on:
       - db
@@ -41,6 +44,7 @@ services:
       test: ["CMD", "curl", "-f", "http://localhost:8080/openmrs"]
       timeout: 5s
     volumes:
+      - ./dak/:/openmrs/dak/
       - openmrs-data:/openmrs/data
 
   # MariaDB

@@ -1,0 +1,65 @@
+{
+    "resourceType" : "Library",
+    "id" : "HIVDTTestLogic",
+    "meta" : {
+      "profile" : ["http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablelibrary",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablelibrary",
+      "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-library",
+      "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"]
+    },
+    "text" : {
+      "status" : "generated",
+      "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Library HIVDTTestLogic</b></p><a name=\"HIVDTTestLogic\"> </a><a name=\"hcHIVDTTestLogic\"> </a><a name=\"HIVDTTestLogic-en-US\"> </a><h2>Parameters</h2><table class=\"grid\"><tr><td>True condition</td><td>out</td><td>0</td><td>1</td><td>boolean</td></tr><tr><td>False condition</td><td>out</td><td>0</td><td>1</td><td>boolean</td></tr><tr><td>Output text</td><td>out</td><td>0</td><td>1</td><td>string</td></tr></table><h2>Contents</h2><p><code>text/cql</code></p><pre><code class=\"language-sql\">define &quot;True condition&quot;:\n  true\n\ndefine &quot;False condition&quot;:\n  false\n\ndefine &quot;Output text&quot;:\n  'Spam! Spam! Spam! Spam! Lovely spam! Wonderful spam! Spam spa-a-a-a-a-am spam spa-a-a-a-a-am spam! Lovely spam! Lovely spam! Lovely spam! Lovely spam! Spam spam spam spam!'\n</code></pre><p><code>Content not shown - (</code><code>application/elm+xml</code>, size = 2Kb )</p></div>"
+    },
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+      "valueCode" : "computable"
+    }],
+    "url" : "http://smart.who.int/HIV/Library/HIVDTTestLogic",
+    "version" : "0.2.0",
+    "name" : "HIVDTTestLogic",
+    "title" : "HIV.DT Test Logic",
+    "status" : "draft",
+    "experimental" : true,
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/library-type",
+        "code" : "logic-library"
+      }]
+    },
+    "date" : "2024-08-08T06:57:34+00:00",
+    "publisher" : "WHO",
+    "contact" : [{
+      "name" : "WHO",
+      "telecom" : [{
+        "system" : "url",
+        "value" : "http://who.int"
+      }]
+    }],
+    "description" : "HIV.DT Test Logic",
+    "parameter" : [{
+      "name" : "True condition",
+      "use" : "out",
+      "min" : 0,
+      "max" : "1",
+      "type" : "boolean"
+    },
+    {
+      "name" : "False condition",
+      "use" : "out",
+      "min" : 0,
+      "max" : "1",
+      "type" : "boolean"
+    },
+    {
+      "name" : "Output text",
+      "use" : "out",
+      "min" : 0,
+      "max" : "1",
+      "type" : "string"
+    }],
+    "content" : [{
+      "contentType" : "text/cql",
+      "data" : "ZGVmaW5lICJUcnVlIGNvbmRpdGlvbiI6CiAgdHJ1ZQoKZGVmaW5lICJGYWxzZSBjb25kaXRpb24iOgogIGZhbHNlCgpkZWZpbmUgIk91dHB1dCB0ZXh0IjoKICAnU3BhbSEgU3BhbSEgU3BhbSEgU3BhbSEgTG92ZWx5IHNwYW0hIFdvbmRlcmZ1bCBzcGFtISBTcGFtIHNwYS1hLWEtYS1hLWFtIHNwYW0gc3BhLWEtYS1hLWEtYW0gc3BhbSEgTG92ZWx5IHNwYW0hIExvdmVseSBzcGFtISBMb3ZlbHkgc3BhbSEgTG92ZWx5IHNwYW0hIFNwYW0gc3BhbSBzcGFtIHNwYW0hJwo="
+    }]
+  }
