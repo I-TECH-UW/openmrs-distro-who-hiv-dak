@@ -45,6 +45,7 @@ services:
       timeout: 5s
     volumes:
       - ./dak/:/openmrs/dak/
+      - ./distro/configuration:/openmrs/distribution/openmrs_config
       - openmrs-data:/openmrs/data
 
   # MariaDB

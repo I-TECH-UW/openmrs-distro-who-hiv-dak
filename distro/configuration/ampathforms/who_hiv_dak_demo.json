@@ -1,0 +1,43 @@
+{
+    "name": "Serious Illnes Form",
+    "pages": [
+      {
+        "label": "HIV DAK ",
+        "sections": [
+          {
+            "label": "WHO HIV DAK",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "Select Symptom",
+                "type": "obs",
+                "required": true,
+                "id": "QTNAA",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "d2719757-77c5-44b4-9133-1dfc0db55f64",
+                  "answers": [
+                    {
+                      "concept": "11f4e87d-9d8c-420a-a2f9-3979e8ecd4ef",
+                      "label": "Tachycardia"
+                    },
+                    {
+                      "concept": "116128AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Fever"
+                    }
+                  ]
+                },
+                "validators": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "processor": "EncounterFormProcessor",
+    "encounterType": "e22e39fd-7db2-45e7-80f1-60fa0d5a4378",
+    "referencedForms": [],
+    "uuid": "402d7f08-391b-4247-9b61-9b4e81ea2c3f",
+    "description": "Serious Illnes Form",
+    "version": "1.0.1"
+  }
